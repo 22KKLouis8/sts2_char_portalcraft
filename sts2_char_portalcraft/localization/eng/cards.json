@@ -186,7 +186,7 @@
   "STS2_CHAR_PORTALCRAFT-LISHENNA_MELODY_MANIFEST.description": "Add 2 [gold]White Psalm, New Revelation[/gold] to your hand.",
 
   "STS2_CHAR_PORTALCRAFT-BEELZEBUB_SUPREME_KING.title": "Beelzebub, Supreme King",
-  "STS2_CHAR_PORTALCRAFT-BEELZEBUB_SUPREME_KING.description": "[gold]White Psalm, New Revelation[/gold] gains +2 Block. [gold]Black Psalm, New Revelation[/gold] gains +2 damage.",
+  "STS2_CHAR_PORTALCRAFT-BEELZEBUB_SUPREME_KING.description": "Whenever an enemy takes damage, it takes +2 damage. Whenever you gain Block, you gain +2 Block.",
 
   "STS2_CHAR_PORTALCRAFT-WHITE_PSALM_NEW_REVELATION.title": "White Psalm, New Revelation",
   "STS2_CHAR_PORTALCRAFT-WHITE_PSALM_NEW_REVELATION.description": "At end of turn, gain 2 Block, then transform into [gold]Black Psalm, New Revelation[/gold]. If exhausted, immediately gain 2 Block and add a [gold]Black Psalm[/gold] to your hand.",

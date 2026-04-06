@@ -28,6 +28,10 @@ public static class ArchaicToothPatch
     /// Patches SetupForPlayer to handle our custom character.
     /// If the player has an ArtifactRecharge in their deck, the relic will
     /// set up to transform it into Biofabrication.
+    /// Note: With the GetTranscendenceStarterCard and GetTranscendenceTransformedCard
+    /// patches below, the base method now handles ArtifactRecharge automatically.
+    /// This postfix serves as a safety fallback in case the base method didn't find
+    /// ArtifactRecharge for some reason (e.g., patch ordering issues).
     /// </summary>
     [HarmonyPostfix]
     [HarmonyPatch(nameof(ArchaicTooth.SetupForPlayer))]
@@ -42,7 +46,9 @@ public static class ArchaicToothPatch
         {
             if (card.Id == ModelDb.Card<ArtifactRecharge>().Id)
             {
-                // Use reflection to set the private properties via Harmony's Traverse
+                // Use Traverse to set the properties — use the player parameter
+                // (not __instance.Owner) since the relic's Owner may not be set yet
+                // during Orobas/Darv event option generation.
                 var traverse = Traverse.Create(__instance);
 
                 var ancientCard = player.RunState.CreateCard(ModelDb.Card<Biofabrication>(), player);
@@ -75,9 +81,11 @@ public static class ArchaicToothTransformPatch
         if (starterCard.Id != ModelDb.Card<ArtifactRecharge>().Id)
             return true; // Let the original method handle it
 
-        // Create the Biofabrication card for this player
-        var owner = Traverse.Create(__instance).Property("Owner").GetValue<MegaCrit.Sts2.Core.Entities.Players.Player>();
-        var ancientCard = owner.RunState.CreateCard(ModelDb.Card<Biofabrication>(), owner);
+        // Use starterCard.Owner (the player who owns the card in their deck) instead of
+        // the relic's Owner, because during Orobas/Darv event setup the relic is created
+        // via ToMutable() and its Owner property is not yet set at this point.
+        var player = starterCard.Owner;
+        var ancientCard = player.RunState.CreateCard(ModelDb.Card<Biofabrication>(), player);
 
         if (starterCard.IsUpgraded)
         {

@@ -11,9 +11,10 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
 /// <summary>
-/// Beelzebub, Supreme King — 2 cost Power, Rare.
-/// All Talisman cards gain +2 to their effects (heal, block, and damage).
-/// Upgrade: Cost -1.
+/// Beelzebub, Supreme King — 3 cost Power, Rare.
+/// Whenever an enemy takes damage, it takes +2 damage.
+/// Whenever you gain block, you gain +2 block.
+/// Upgrade: Cost-1.
 /// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class BeelzebubSupremeKing : sts2_char_portalcraftCard
@@ -23,11 +24,11 @@ public sealed class BeelzebubSupremeKing : sts2_char_portalcraftCard
         HoverTipFactory.FromPower<BeelzebubSupremeKingPower>(),
     };
 
-    public BeelzebubSupremeKing() : base(2, CardType.Power, CardRarity.Rare, TargetType.Self) { }
+    public BeelzebubSupremeKing() : base(3, CardType.Power, CardRarity.Rare, TargetType.Self) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        await PowerCmd.Apply<BeelzebubSupremeKingPower>(Owner.Creature, 1, Owner.Creature, this);
+        await PowerCmd.Apply<BeelzebubSupremeKingPower>(Owner.Creature, 2, Owner.Creature, this);
     }
 
     protected override void OnUpgrade()

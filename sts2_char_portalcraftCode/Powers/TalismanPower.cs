@@ -146,24 +146,13 @@ public sealed class TalismanPower : sts2_char_portalcraftPower
         }
     }
 
-    /// <summary>
-    /// Returns the Beelzebub flat bonus (2 * stacks), or 0 if no Beelzebub power.
-    /// </summary>
-    private int GetBeelzebubBonus()
-    {
-        var beelzebub = Owner.GetPower<BeelzebubSupremeKingPower>();
-        return beelzebub?.Bonus ?? 0;
-    }
-
     private int GetWhitePsalmBlock()
     {
-        int bonus = GetBeelzebubBonus();
-        return BaseBlockAmount + bonus;
+        return BaseBlockAmount;
     }
 
     private int GetBlackPsalmDamage()
     {
-        int bonus = GetBeelzebubBonus();
-        return BaseDamageAmount + bonus;
+        return BaseDamageAmount;
     }
 }

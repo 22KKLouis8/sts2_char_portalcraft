@@ -186,7 +186,7 @@
   "STS2_CHAR_PORTALCRAFT-LISHENNA_MELODY_MANIFEST.description": "将2张[gold]新约·白之章[/gold]加入手牌。",
 
   "STS2_CHAR_PORTALCRAFT-BEELZEBUB_SUPREME_KING.title": "唯一王者·别西卜",
-  "STS2_CHAR_PORTALCRAFT-BEELZEBUB_SUPREME_KING.description": "[gold]新约·白之章[/gold]格挡+2。[gold]新约·黑之章[/gold]伤害+2。",
+  "STS2_CHAR_PORTALCRAFT-BEELZEBUB_SUPREME_KING.description": "当敌人受到伤害时，多受2点伤害。当你获得格挡时，多获得2点格挡。",
 
   "STS2_CHAR_PORTALCRAFT-WHITE_PSALM_NEW_REVELATION.title": "新约·白之章",
   "STS2_CHAR_PORTALCRAFT-WHITE_PSALM_NEW_REVELATION.description": "回合结束时，获得2点格挡，然后变为[gold]新约·黑之章[/gold]。若被消耗，立即获得2点格挡并将1张[gold]新约·黑之章[/gold]加入手牌。",
