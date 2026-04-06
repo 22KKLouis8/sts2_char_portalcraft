@@ -51,7 +51,6 @@ public sealed class KittyCannoneer : sts2_char_portalcraftCard
 
     protected override void OnUpgrade()
     {
-        DynamicVars.Damage.UpgradeValueBy(4m);
         DynamicVars["MagicNumber"].UpgradeValueBy(1m);
     }
 }
