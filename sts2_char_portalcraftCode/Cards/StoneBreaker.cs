@@ -21,7 +21,7 @@ public sealed class StoneBreaker : sts2_char_portalcraftCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new IntVar("MagicNumber", 12m),
+        new IntVar("MagicNumber", 8m),
     };
 
     public StoneBreaker() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self) { }
@@ -35,7 +35,7 @@ public sealed class StoneBreaker : sts2_char_portalcraftCard
         for (int i = 0; i < hits; i++)
         {
             var target = Owner.RunState.Rng.Shuffle.NextItem(enemies);
-            await CreatureCmd.Damage(choiceContext, target, 1m, ValueProp.Unpowered, Owner.Creature, this);
+            await CreatureCmd.Damage(choiceContext, target, 1m, 0, Owner.Creature, this);
         }
     }
 
