@@ -11,11 +11,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Ludicrous Ordnance — 1 cost Attack.
-/// Add 2 copies of this card to your hand. Deal 3 damage to ALL enemies for each copy in hand.
-/// Upgrade: +2 damage, +1 copy.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class LudicrousOrdnance : sts2_char_portalcraftCard
 {
@@ -29,19 +24,16 @@ public sealed class LudicrousOrdnance : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // Add copies to hand first
         int copies = (int)DynamicVars.Cards.BaseValue;
         for (int i = 0; i < copies; i++)
         {
             var copy = CombatState.CreateCard<LudicrousOrdnance>(Owner);
             await CardPileCmd.AddGeneratedCardToCombat(copy, PileType.Hand, addedByPlayer: true);
         }
-
-        // Count all copies of this card in hand
+        
         int countInHand = PileType.Hand.GetPile(Owner).Cards
             .Count(c => c is LudicrousOrdnance);
-
-        // Deal damage to all enemies for each copy
+        
         var enemies = CombatState.HittableEnemies;
         for (int i = 0; i < countInHand; i++)
         {

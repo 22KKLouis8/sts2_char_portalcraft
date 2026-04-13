@@ -28,11 +28,9 @@ public sealed class ArtifactCatapult : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // Add a Gear of Ambition first
         var gear = CombatState.CreateCard<GearOfAmbition>(Owner);
         await CardPileCmd.AddGeneratedCardToCombat(gear, PileType.Hand, addedByPlayer: true);
-
-        // Select any construct in hand to copy
+        
         var prefs = new CardSelectorPrefs(
             new LocString("card_selection", "ARTIFACT_CATAPULT_PROMPT"),
             minCount: 1,

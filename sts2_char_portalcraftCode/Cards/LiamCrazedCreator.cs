@@ -11,12 +11,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Liam, Crazed Creator — 2 cost Power.
-/// Whenever you play a Puppet, gain 2 block and deal 2 damage to a random enemy.
-/// For every 5 Puppets played, gain 1 energy.
-/// Upgrade: 4 block and 4 damage instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class LiamCrazedCreator : sts2_char_portalcraftCard
 {

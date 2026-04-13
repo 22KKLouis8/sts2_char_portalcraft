@@ -9,10 +9,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Light of the Dewdrop — 1 cost Common Skill.
-/// Draw 2 cards. Upgrade: Draw 3.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class LightOfTheDewdrop : sts2_char_portalcraftCard
 {

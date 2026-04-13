@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Axia, Heir to Destruction — 2 cost Power, Uncommon.
-/// At end of turn, exhaust all Talisman cards in your hand.
-/// Upgrade: Innate.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class AxiaHeirToDestruction : sts2_char_portalcraftCard
 {

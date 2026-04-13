@@ -7,7 +7,6 @@ using MegaCrit.Sts2.Core.Localization.DynamicVars;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>Sylvia token: Heal 4 HP. Exhaust.</summary>
 public sealed class SylviaHealChoice : sts2_char_portalcraftCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]

@@ -9,11 +9,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Marionette Master — 1 cost Skill.
-/// Add a Puppet and an Enhanced Puppet to your hand.
-/// Upgrade: cost 0.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class MarionetteMaster : sts2_char_portalcraftCard
 {

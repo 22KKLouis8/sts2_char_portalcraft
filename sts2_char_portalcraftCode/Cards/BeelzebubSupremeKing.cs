@@ -10,12 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Beelzebub, Supreme King — 3 cost Power, Rare.
-/// Whenever an enemy takes damage, it takes +2 damage.
-/// Whenever you gain block, you gain +2 block.
-/// Upgrade: Cost-1.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class BeelzebubSupremeKing : sts2_char_portalcraftCard
 {

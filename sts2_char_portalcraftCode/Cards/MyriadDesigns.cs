@@ -10,12 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Myriad Designs — 2 cost Rare Skill, Exhaust.
-/// Add a Ludicrous Ordnance, Shoddy Plaything, and Substandard Puppet to your hand.
-/// They cost 0 this turn.
-/// Upgrade: Add upgraded versions instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class MyriadDesigns : sts2_char_portalcraftCard
 {

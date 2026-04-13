@@ -11,11 +11,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Noah, Thread of Death — 0 cost Skill.
-/// All Puppets gain +7 damage (applies as a power buff).
-/// Upgrade: +10 damage instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class NoahThreadOfDeath : sts2_char_portalcraftCard
 {

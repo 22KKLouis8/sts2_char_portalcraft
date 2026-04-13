@@ -10,17 +10,12 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Substandard Puppet — 2 cost Attack, Retain.
-/// Deal 36 damage. Add a copy of this card to your hand.
-/// Upgrade: +4 damage.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class SubstandardPuppet : sts2_char_portalcraftCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new DamageVar(28m, ValueProp.Move),
+        new DamageVar(24m, ValueProp.Move),
     };
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Retain };

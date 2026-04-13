@@ -9,10 +9,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Ilsa Barrage Choice — Token Attack.
-/// Deal 12 damage to a random enemy. Do this 3 times.
-/// </summary>
 public sealed class IlsaBarrageChoice : sts2_char_portalcraftCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]

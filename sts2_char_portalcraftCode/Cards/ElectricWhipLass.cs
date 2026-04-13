@@ -12,11 +12,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Electric Whip Lass — 2 cost Common Skill.
-/// Gain 12 Block. Add a Gear of Remembrance to your hand.
-/// Upgrade: +4 Block.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class ElectricWhipLass : sts2_char_portalcraftCard
 {

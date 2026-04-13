@@ -12,11 +12,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Stream of Life — 1 cost Common Attack.
-/// Deal 6 damage. Add a Gear of Remembrance to your hand.
-/// Upgrade: +3 damage.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class StreamOfLife : sts2_char_portalcraftCard
 {

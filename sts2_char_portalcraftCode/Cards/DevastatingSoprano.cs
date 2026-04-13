@@ -14,11 +14,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Devastating Soprano — 1 cost Skill, Uncommon.
-/// Select a card in your hand and exhaust it. Add a White Psalm, New Revelation to your hand.
-/// Upgrade: Cost -1.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class DevastatingSoprano : sts2_char_portalcraftCard
 {
@@ -31,7 +26,6 @@ public sealed class DevastatingSoprano : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // Select a card to exhaust
         bool AnyCard(CardModel c) => c != this;
         var handCards = PileType.Hand.GetPile(Owner).Cards.Where(AnyCard).ToList();
         if (handCards.Count == 0) return;

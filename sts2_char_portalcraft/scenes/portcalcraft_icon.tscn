@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://l1oxcs7fmxu2"]
+
+[ext_resource type="Texture2D" uid="uid://cj4sct3tk6v0" path="res://sts2_char_portalcraft/images/charui/Ralmia_leader_emblem.webp" id="1_bxa0m"]
+
+[node name="PortcalcraftIcon" type="TextureRect"]
+offset_right = 55.0
+offset_bottom = 54.0
+texture = ExtResource("1_bxa0m")
+expand_mode = 1
+stretch_mode = 6

@@ -29,7 +29,6 @@ public sealed class PuppetCat : sts2_char_portalcraftCard
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         var puppet = CombatState.CreateCard<Puppet>(Owner);
-        // Buff the puppet's damage by BonusDamage
         puppet.DynamicVars.Damage.BaseValue += DynamicVars["BonusDamage"].BaseValue;
         await CardPileCmd.AddGeneratedCardToCombat(puppet, PileType.Hand, addedByPlayer: true);
     }

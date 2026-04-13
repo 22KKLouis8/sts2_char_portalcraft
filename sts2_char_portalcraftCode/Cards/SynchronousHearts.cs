@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Synchronous Hearts — 2 cost Skill, Exhaust.
-/// Add a Lloyd and a Victoria to your hand.
-/// Upgrade: remove Exhaust.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class SynchronousHearts : sts2_char_portalcraftCard
 {

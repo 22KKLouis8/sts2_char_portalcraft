@@ -16,12 +16,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Cassius, Sky-Yearning Arrival — 2 cost Uncommon Skill.
-/// Select one Artifact in your hand. Deal 5X damage to ALL enemies. X = cost of that Artifact.
-/// Add a Fortifier Artifact to your hand.
-/// Upgrade: Deal 8X instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class CassiusSkyYearningArrival : sts2_char_portalcraftCard
 {

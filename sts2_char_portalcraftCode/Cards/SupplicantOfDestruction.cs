@@ -15,11 +15,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Supplicant of Destruction — 0 cost Attack, Common.
-/// Select a card in your hand and exhaust it. Deal 6 damage to a random enemy.
-/// Upgrade: +4 damage.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class SupplicantOfDestruction : sts2_char_portalcraftCard
 {
@@ -32,7 +27,6 @@ public sealed class SupplicantOfDestruction : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // Select a card to exhaust
         bool AnyCard(CardModel c) => c != this;
         var handCards = PileType.Hand.GetPile(Owner).Cards.Where(AnyCard).ToList();
         if (handCards.Count == 0) return;
@@ -50,8 +44,7 @@ public sealed class SupplicantOfDestruction : sts2_char_portalcraftCard
         {
             await CardCmd.Exhaust(choiceContext, card);
         }
-
-        // Deal damage to a random enemy
+        
         var enemies = CombatState.HittableEnemies.ToList();
         if (enemies.Count > 0)
         {

@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Dirk, Metal Mercenary — 1 cost Uncommon Skill.
-/// Add a Fortifier Artifact to your hand.
-/// Upgrade: Cost 0.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class DirkMetalMercenary : sts2_char_portalcraftCard
 {

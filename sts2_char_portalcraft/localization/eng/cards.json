@@ -222,7 +222,7 @@
   "STS2_CHAR_PORTALCRAFT-KITTY_CANNONEER.description": "Deal {Damage:diff()} damage. Apply {MagicNumber:diff()} [gold]Weak[/gold]. Apply {MagicNumber:diff()} [gold]Vulnerable[/gold]. Add a [gold]Gear of Ambition[/gold] to your hand.",
 
   "STS2_CHAR_PORTALCRAFT-SINCERITY_OF_THE_DEWDROP.title": "Sincerity of the Dewdrop",
-  "STS2_CHAR_PORTALCRAFT-SINCERITY_OF_THE_DEWDROP.description": "Transform a card in your hand into [gold]Imari's Little Buddies[/gold].",
+  "STS2_CHAR_PORTALCRAFT-SINCERITY_OF_THE_DEWDROP.description": "Transform a card in your hand into {IfUpgraded:show:[gold]Imari's Little Buddies+[/gold]|[gold]Imari's Little Buddies[/gold]}.",
 
   "STS2_CHAR_PORTALCRAFT-ILSA_BRUTAL_DRILL_SERGEANT.title": "Ilsa, Brutal Drill Sergeant",
   "STS2_CHAR_PORTALCRAFT-ILSA_BRUTAL_DRILL_SERGEANT.description": "Select a Mode to activate.\n1. Do this 3 times: \"Deal {IfUpgraded:show:16|12} damage to a random enemy.\"\n2. Deal {IfUpgraded:show:20|16} damage to All enemies.",
@@ -252,11 +252,53 @@
   "STS2_CHAR_PORTALCRAFT-IMARI_DEWDROP.description": "Discard a card. Search your draw pile for a [gold]Skill[/gold] and add it to your hand. This turn, whenever you play a [gold]Skill[/gold], add {IfUpgraded:show:[gold]Imari's Little Buddies+[/gold]|[gold]Imari's Little Buddies[/gold]} to your hand.",
 
   "STS2_CHAR_PORTALCRAFT-UNFEELING_ELD_AXE.title": "Unfeeling Eld Axe",
-  "STS2_CHAR_PORTALCRAFT-UNFEELING_ELD_AXE.description": "[gold]In hand[/gold]: Whenever a card with base cost 2 or more is played, reduce this card's cost by 1 this turn.\nUpgrade a random unupgraded card in your hand. Deal {MagicNumber:diff()} damage to a random enemy.",
+  "STS2_CHAR_PORTALCRAFT-UNFEELING_ELD_AXE.description": "[gold]In hand[/gold]: Whenever a card with base cost 2 or more is played, reduce this card's cost by 1 this turn.\nSelect a card in your hand. Reduce its cost by 1 permanently for this combat.",
 
   "STS2_CHAR_PORTALCRAFT-SUPERSONIC_FIGHTER.title": "Supersonic Fighter",
   "STS2_CHAR_PORTALCRAFT-SUPERSONIC_FIGHTER.description": "Add an [gold]Ominous Artifact γ[/gold] to your hand.",
 
   "STS2_CHAR_PORTALCRAFT-IMARIS_LITTLE_BUDDIES.title": "Imari's Little Buddies",
-  "STS2_CHAR_PORTALCRAFT-IMARIS_LITTLE_BUDDIES.description": "Deal {Damage:diff()} damage. Gain {Block:diff()} Block."
+  "STS2_CHAR_PORTALCRAFT-IMARIS_LITTLE_BUDDIES.description": "Deal {Damage:diff()} damage. Gain {Block:diff()} Block.",
+
+  "STS2_CHAR_PORTALCRAFT-LUNAR_BUNNY.title": "Lunar Bunny",
+  "STS2_CHAR_PORTALCRAFT-LUNAR_BUNNY.description": "Gain {Block:diff()} Block.\n[gold]In hand[/gold]: Whenever you play a Skill, reduce this card's cost by 1 this turn.",
+
+  "STS2_CHAR_PORTALCRAFT-YOG_ZENTHA_ELD_AXE.title": "Yog-Zentha, Eld Axe",
+  "STS2_CHAR_PORTALCRAFT-YOG_ZENTHA_ELD_AXE.description": "Deal {Damage:diff()} damage. If a card in your hand has a base cost of 2 or more, add a [gold]Depths of the Eld Axe[/gold] to your hand.",
+
+  "STS2_CHAR_PORTALCRAFT-DEPTHS_OF_THE_ELD_AXE.title": "Depths of the Eld Axe",
+  "STS2_CHAR_PORTALCRAFT-DEPTHS_OF_THE_ELD_AXE.description": "Select a card in your hand with a base cost of 2 or more. Add a copy of it to your hand and reduce the copy's cost by 1 permanently for this combat.",
+
+  "STS2_CHAR_PORTALCRAFT-SHO_REBORN_NIGHT_KING.title": "Sho, Reborn Night King",
+  "STS2_CHAR_PORTALCRAFT-SHO_REBORN_NIGHT_KING.description": "If you have played 4 or more Skills this turn, gain {MagicNumber:diff()} Energy.",
+
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_OF_FORTUNE.title": "Slaus, Revolving Wheel of Fortune",
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_OF_FORTUNE.description": "At the start of your turn, activate a random unused ability. Each activates only once:\n1. Reduce the cost of all cards in your hand by 1 until end of turn.\n2. Gain 2 [gold]Strength[/gold] and 2 [gold]Dexterity[/gold].\n3. Restore 3 HP.\nExpires when all three have been used.",
+
+  "STS2_CHAR_PORTALCRAFT-MECHA_CAVALIER.title": "Mecha Cavalier",
+  "STS2_CHAR_PORTALCRAFT-MECHA_CAVALIER.description": "Gain {Block:diff()} Block. If the cost of this card is 1, gain {IfUpgraded:show:20|16} Block instead. If the cost is 0, gain {IfUpgraded:show:24|20} Block instead.",
+
+  "STS2_CHAR_PORTALCRAFT-TIMID_PIONEER.title": "Timid Pioneer",
+  "STS2_CHAR_PORTALCRAFT-TIMID_PIONEER.description": "All enemies lose {MagicNumber:diff()} [gold]Strength[/gold] until end of their turn.",
+
+  "STS2_CHAR_PORTALCRAFT-ACHIM_LORD_OF_DESPAIR.title": "Achim, Lord of Despair",
+  "STS2_CHAR_PORTALCRAFT-ACHIM_LORD_OF_DESPAIR.description": "Select a card in your hand and Exhaust it. Select 1 card in your discard pile and add it to your hand.",
+
+  "STS2_CHAR_PORTALCRAFT-TSUBASA_BLAZING_GEARCYCLIST.title": "Tsubasa, Blazing Gearcyclist",
+  "STS2_CHAR_PORTALCRAFT-TSUBASA_BLAZING_GEARCYCLIST.description": "Reduce the cost of {MagicNumber:diff()} random cards in your hand by 1 for this turn.",
+
+  "STS2_CHAR_PORTALCRAFT-EUSTACE_HOWL_OF_THUNDER.title": "Eustace, Howl of Thunder",
+  "STS2_CHAR_PORTALCRAFT-EUSTACE_HOWL_OF_THUNDER.description": "Deal {Damage:diff()} damage. If the cost of this card is not 2, deal {IfUpgraded:show:22|18} damage instead and reduce a random card's cost in your hand by 1 for this turn.",
+
+  "STS2_CHAR_PORTALCRAFT-NEURON_DISRUPTER.title": "Neuron Disrupter",
+  "STS2_CHAR_PORTALCRAFT-NEURON_DISRUPTER.description": "Draw {Cards:diff()} cards. Gain Energy equal to the number of cards in your hand.",
+
+  "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN.title": "Flowering Artisan",
+  "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN.description": "Draw a [gold]Skill[/gold] from your draw pile. This turn, whenever you play a Skill, deal {MagicNumber:diff()} damage to ALL enemies.",
+
+  "STS2_CHAR_PORTALCRAFT-LU_WOH_LIGHT_PERSONIFIED.title": "Lu Woh, Light Personified",
+  "STS2_CHAR_PORTALCRAFT-LU_WOH_LIGHT_PERSONIFIED.description": "Deal 1 damage to a random enemy 6 times. All enemies lose {MagicNumber:diff()} [gold]Strength[/gold] until end of their turn. If the cost is not 2, for the next 3 enemy turns, enemies that intend to attack lose 4 [gold]Strength[/gold] for that turn.",
+
+  "STS2_CHAR_PORTALCRAFT-CHAOS_LEGION.title": "Chaos Legion",
+  "STS2_CHAR_PORTALCRAFT-CHAOS_LEGION.description": "Deal {Damage:diff()} damage to ALL enemies."
 }

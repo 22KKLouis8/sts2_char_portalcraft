@@ -12,12 +12,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Orchis, Newfound Heart — 2 cost Skill, Exhaust.
-/// Add a Lloyd to your hand. Add 2 Enhanced Puppets to your hand.
-/// Apply Recast 1 to all Puppets in your hand and exhaust pile.
-/// Upgrade: remove Exhaust.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class OrchisNewfoundHeart : sts2_char_portalcraftCard
 {
@@ -33,14 +27,11 @@ public sealed class OrchisNewfoundHeart : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // Add Lloyd
         var lloyd = CombatState.CreateCard<Lloyd>(Owner);
         await CardPileCmd.AddGeneratedCardToCombat(lloyd, PileType.Hand, addedByPlayer: true);
-
-        // Add 2 Enhanced Puppets
+        
         await EnhancedPuppet.CreateInHand(Owner, 2, CombatState);
-
-        // Apply Recast 1 to all Puppets in hand and exhaust pile
+        
         var puppetsInHand = PileType.Hand.GetPile(Owner).Cards
             .Where(c => PuppetHelper.IsPuppet(c))
             .ToList();

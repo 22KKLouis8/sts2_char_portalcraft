@@ -11,11 +11,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Advent of the Eld Axe — 1 cost Common Attack.
-/// Deal 9 damage. If a card in your hand has a base cost of 2 or more, draw a card.
-/// Upgrade: +1 damage, draw 2 instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class AdventOfTheEldAxe : sts2_char_portalcraftCard
 {

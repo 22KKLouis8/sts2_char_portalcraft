@@ -23,7 +23,6 @@ public sealed class ResurrectionTuner : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // First: exhaust 1 card from hand
         bool AnyCard(CardModel c) => c != this;
 
         var handCards = PileType.Hand.GetPile(Owner).Cards.Where(AnyCard).ToList();
@@ -42,8 +41,7 @@ public sealed class ResurrectionTuner : sts2_char_portalcraftCard
         {
             await CardCmd.Exhaust(choiceContext, card);
         }
-
-        // Then: find up to 2 random puppets in exhaust pile and move them to hand
+        
         var exhaustedPuppets = PileType.Exhaust.GetPile(Owner).Cards
             .Where(c => PuppetHelper.IsPuppet(c))
             .ToList();

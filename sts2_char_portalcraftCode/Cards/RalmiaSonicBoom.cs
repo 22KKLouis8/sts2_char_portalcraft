@@ -13,11 +13,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Ralmia, Sonic Boom — X cost Skill.
-/// Select up to X Artifacts (cost ≤ 2) in your hand. Activate their effects.
-/// Upgrade: X+1 instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class RalmiaSonicBoom : sts2_char_portalcraftCard
 {

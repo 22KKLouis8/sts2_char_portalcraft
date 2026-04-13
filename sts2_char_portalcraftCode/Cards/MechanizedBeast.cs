@@ -12,11 +12,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Mechanized Beast — 3 cost Common Skill.
-/// Gain 18 Block. Whenever you are attacked this turn, deal 6 damage back.
-/// Upgrade: +6 Block, +2 thorns damage.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class MechanizedBeast : sts2_char_portalcraftCard
 {

@@ -11,11 +11,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Puppet Theater — 1 cost Power.
-/// At the start of each turn, add 1 Puppet to your hand.
-/// Upgrade: 2 Puppets instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class PuppetTheater : sts2_char_portalcraftCard
 {

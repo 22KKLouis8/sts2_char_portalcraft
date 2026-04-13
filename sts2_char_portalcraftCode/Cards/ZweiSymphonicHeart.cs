@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Zwei, Symphonic Heart — 2 cost Skill.
-/// Add a Victoria to your hand. Victoria gets Recast 1.
-/// Upgrade: cost 1.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class ZweiSymphonicHeart : sts2_char_portalcraftCard
 {
@@ -27,7 +22,6 @@ public sealed class ZweiSymphonicHeart : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // Add Victoria with Recast 1
         var victoria = CombatState.CreateCard<Victoria>(Owner);
         await CardPileCmd.AddGeneratedCardToCombat(victoria, PileType.Hand, addedByPlayer: true);
         victoria.BaseReplayCount += 1;

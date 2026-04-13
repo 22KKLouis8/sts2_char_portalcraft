@@ -13,11 +13,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Kitty Cannoneer — 2 cost Common Attack.
-/// Deal 10 damage. Apply 1 Weak. Apply 1 Vulnerable. Add a Gear of Ambition to your hand.
-/// Upgrade: +4 damage, 2 Weak, 2 Vulnerable.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class KittyCannoneer : sts2_char_portalcraftCard
 {

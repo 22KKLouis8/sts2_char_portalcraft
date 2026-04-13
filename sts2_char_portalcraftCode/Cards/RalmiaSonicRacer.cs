@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Ralmia, Sonic Racer — 2 cost Ancient Power.
-/// Grant 1 energy for every 4 fusions.
-/// Upgrade: Innate.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class RalmiaSonicRacer : sts2_char_portalcraftCard
 {

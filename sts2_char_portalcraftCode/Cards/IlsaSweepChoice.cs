@@ -8,10 +8,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Ilsa Sweep Choice — Token Attack.
-/// Deal 16 damage to ALL enemies.
-/// </summary>
 public sealed class IlsaSweepChoice : sts2_char_portalcraftCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]

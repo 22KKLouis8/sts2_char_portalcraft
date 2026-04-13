@@ -13,12 +13,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Devotee of Destruction — 2 cost Attack, Common.
-/// Exhaust all cards in your hand. Get 2X Block and deal 2X damage.
-/// X = number of cards exhausted this turn.
-/// Upgrade: 3X instead of 2X.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class DevoteeOfDestruction : sts2_char_portalcraftCard
 {
@@ -34,8 +28,7 @@ public sealed class DevoteeOfDestruction : sts2_char_portalcraftCard
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         System.ArgumentNullException.ThrowIfNull(cardPlay.Target, "cardPlay.Target");
-
-        // Exhaust all cards in hand (except self, which is already being played)
+        
         var handCards = PileType.Hand.GetPile(Owner).Cards
             .Where(c => c != this)
             .ToList();

@@ -43,8 +43,7 @@ public sealed class VierHeartSlayer : sts2_char_portalcraftCard
 
         var selected = (await CardSelectCmd.FromHand(choiceContext, Owner, prefs, Filter, this)).ToList();
         if (selected.Count == 0) return;
-
-        // Transform each selected puppet into a Doll Slayer, inheriting damage
+        
         foreach (var puppet in selected)
         {
             decimal puppetDamage = puppet.DynamicVars.Damage?.BaseValue ?? 0m;

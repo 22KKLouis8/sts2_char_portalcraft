@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Supersonic Fighter — 4 cost Rare Skill, Exhaust.
-/// Add an Ominous Artifact γ to your hand.
-/// Upgrade: Remove Exhaust.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class SupersonicFighter : sts2_char_portalcraftCard
 {

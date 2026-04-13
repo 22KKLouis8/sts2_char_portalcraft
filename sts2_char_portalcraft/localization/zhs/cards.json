@@ -144,7 +144,7 @@
   "STS2_CHAR_PORTALCRAFT-ZWEI_SYMPHONIC_HEART.description": "将1个[gold]维多利亚[/gold]加入手牌。[gold]维多利亚[/gold]获得[gold]重放[/gold] 1。",
 
   "STS2_CHAR_PORTALCRAFT-NOAH_THREAD_OF_DEATH.title": "杀意之丝·诺亚",
-  "STS2_CHAR_PORTALCRAFT-NOAH_THREAD_OF_DEATH.description": "你的[gold]悬丝傀儡[/gold]造成额外 +{MagicNumber:diff()} 点伤害。",
+  "STS2_CHAR_PORTALCRAFT-NOAH_THREAD_OF_DEATH.description": "这个回合，你的[gold]悬丝傀儡[/gold]造成额外 +{MagicNumber:diff()} 点伤害。",
 
   "STS2_CHAR_PORTALCRAFT-SUBSTANDARD_PUPPET.title": "拙劣的人偶",
   "STS2_CHAR_PORTALCRAFT-SUBSTANDARD_PUPPET.description": "造成 {Damage:diff()} 点伤害。将此牌的1份复制品加入手牌。",
@@ -222,7 +222,7 @@
   "STS2_CHAR_PORTALCRAFT-KITTY_CANNONEER.description": "造成 {Damage:diff()} 点伤害。施加 {MagicNumber:diff()} 层[gold]虚弱[/gold]。施加 {MagicNumber:diff()} 层[gold]易伤[/gold]。将1个[gold]未来核心[/gold]加入手牌。",
 
   "STS2_CHAR_PORTALCRAFT-SINCERITY_OF_THE_DEWDROP.title": "诚心的尽小花",
-  "STS2_CHAR_PORTALCRAFT-SINCERITY_OF_THE_DEWDROP.description": "将手牌中1张牌变形为[gold]伊鞠的小鬼[/gold]。",
+  "STS2_CHAR_PORTALCRAFT-SINCERITY_OF_THE_DEWDROP.description": "将手牌中1张牌变形为{IfUpgraded:show:[gold]伊鞠的小鬼+[/gold]|[gold]伊鞠的小鬼[/gold]}。",
 
   "STS2_CHAR_PORTALCRAFT-ILSA_BRUTAL_DRILL_SERGEANT.title": "严厉的教官·伊尔莎",
   "STS2_CHAR_PORTALCRAFT-ILSA_BRUTAL_DRILL_SERGEANT.description": "选择一个模式发动。\n1. 以下效果重复3次：「对随机1个敌人造成{IfUpgraded:show:16|12}点伤害。」\n2. 对所有敌人造成{IfUpgraded:show:20|16}点伤害。",
@@ -252,11 +252,53 @@
   "STS2_CHAR_PORTALCRAFT-IMARI_DEWDROP.description": "弃1张牌。从抽牌堆中检索1张[gold]技能[/gold]牌加入手牌。本回合每使用1张[gold]技能[/gold]牌，将{IfUpgraded:show:[gold]伊鞠的小鬼+[/gold]|[gold]伊鞠的小鬼[/gold]}加入手牌。",
 
   "STS2_CHAR_PORTALCRAFT-UNFEELING_ELD_AXE.title": "恶劣的天斧",
-  "STS2_CHAR_PORTALCRAFT-UNFEELING_ELD_AXE.description": "[gold]手牌效果[/gold]：每打出1张基础费用2或以上的牌，本回合此牌费用减少1。\n升级手牌中1张随机未升级的牌。对随机敌人造成 {MagicNumber:diff()} 点伤害。",
+  "STS2_CHAR_PORTALCRAFT-UNFEELING_ELD_AXE.description": "[gold]手牌效果[/gold]：每打出1张基础费用2或以上的牌，本回合此牌费用减少1。\n选择手牌中1张牌，在本场战斗中永久减少其费用1点。",
 
   "STS2_CHAR_PORTALCRAFT-SUPERSONIC_FIGHTER.title": "音速飞行兵",
   "STS2_CHAR_PORTALCRAFT-SUPERSONIC_FIGHTER.description": "将1个[gold]毁灭创造物 γ[/gold]加入手牌。",
 
   "STS2_CHAR_PORTALCRAFT-IMARIS_LITTLE_BUDDIES.title": "伊鞠的小鬼",
-  "STS2_CHAR_PORTALCRAFT-IMARIS_LITTLE_BUDDIES.description": "造成 {Damage:diff()} 点伤害。获得 {Block:diff()} 点格挡。"
+  "STS2_CHAR_PORTALCRAFT-IMARIS_LITTLE_BUDDIES.description": "造成 {Damage:diff()} 点伤害。获得 {Block:diff()} 点格挡。",
+
+  "STS2_CHAR_PORTALCRAFT-LUNAR_BUNNY.title": "清宵玉兔",
+  "STS2_CHAR_PORTALCRAFT-LUNAR_BUNNY.description": "获得 {Block:diff()} 点格挡。\n[gold]手牌效果[/gold]：每使用1张技能牌，本回合此牌费用减少1。",
+
+  "STS2_CHAR_PORTALCRAFT-YOG_ZENTHA_ELD_AXE.title": "古旧天斧·尤泽塔",
+  "STS2_CHAR_PORTALCRAFT-YOG_ZENTHA_ELD_AXE.description": "造成 {Damage:diff()} 点伤害。若手牌中有基础费用2或以上的牌，将1张[gold]天斧深渊[/gold]加入手牌。",
+
+  "STS2_CHAR_PORTALCRAFT-DEPTHS_OF_THE_ELD_AXE.title": "天斧深渊",
+  "STS2_CHAR_PORTALCRAFT-DEPTHS_OF_THE_ELD_AXE.description": "选择手牌中1张基础费用2或以上的牌。将其复制品加入手牌，并在本场战斗中永久减少复制品费用1点。",
+
+  "STS2_CHAR_PORTALCRAFT-SHO_REBORN_NIGHT_KING.title": "夜王再起·翔",
+  "STS2_CHAR_PORTALCRAFT-SHO_REBORN_NIGHT_KING.description": "若本回合已使用4张或以上技能牌，获得 {MagicNumber:diff()} 点能量。",
+
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_OF_FORTUNE.title": "转动的《命运之轮》·斯洛士",
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_OF_FORTUNE.description": "每回合开始时，随机发动一个未使用的效果，每个效果只能发动一次：\n1. 手牌中所有牌费用减少1直到回合结束。\n2. 获得2点[gold]力量[/gold]和2点[gold]敏捷[/gold]。\n3. 恢复3点生命。\n三个效果全部发动后移除此能力。",
+
+  "STS2_CHAR_PORTALCRAFT-MECHA_CAVALIER.title": "魔钢骑兵",
+  "STS2_CHAR_PORTALCRAFT-MECHA_CAVALIER.description": "获得 {Block:diff()} 点格挡。若此牌费用为1，改为获得{IfUpgraded:show:20|16}点格挡。若费用为0，改为获得{IfUpgraded:show:24|20}点格挡。",
+
+  "STS2_CHAR_PORTALCRAFT-TIMID_PIONEER.title": "胆小鬼先锋",
+  "STS2_CHAR_PORTALCRAFT-TIMID_PIONEER.description": "所有敌人失去 {MagicNumber:diff()} 点[gold]力量[/gold]直到其回合结束。",
+
+  "STS2_CHAR_PORTALCRAFT-ACHIM_LORD_OF_DESPAIR.title": "绝望之王·阿基姆",
+  "STS2_CHAR_PORTALCRAFT-ACHIM_LORD_OF_DESPAIR.description": "选择手牌中1张牌并消耗。从弃牌堆中选择{IfUpgraded:show:2张牌|1张牌}加入手牌。",
+
+  "STS2_CHAR_PORTALCRAFT-TSUBASA_BLAZING_GEARCYCLIST.title": "爆燃老大·翼",
+  "STS2_CHAR_PORTALCRAFT-TSUBASA_BLAZING_GEARCYCLIST.description": "随机减少手牌中 {MagicNumber:diff()} 张牌的费用1点，持续到本回合结束。",
+
+  "STS2_CHAR_PORTALCRAFT-EUSTACE_HOWL_OF_THUNDER.title": "轰雷闪狼·尤斯提斯",
+  "STS2_CHAR_PORTALCRAFT-EUSTACE_HOWL_OF_THUNDER.description": "造成 {Damage:diff()} 点伤害。若此牌费用不为2，改为造成{IfUpgraded:show:22|18}点伤害，并随机减少手牌中1张牌的费用1点，持续本回合。",
+
+  "STS2_CHAR_PORTALCRAFT-NEURON_DISRUPTER.title": "神经遮蔽者",
+  "STS2_CHAR_PORTALCRAFT-NEURON_DISRUPTER.description": "抽 {Cards:diff()} 张牌。获得等同于手牌数量的能量。",
+
+  "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN.title": "繁花技师",
+  "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN.description": "从抽牌堆中检索1张[gold]技能[/gold]牌。本回合每使用1张技能牌，对所有敌人造成 {MagicNumber:diff()} 点伤害。",
+
+  "STS2_CHAR_PORTALCRAFT-LU_WOH_LIGHT_PERSONIFIED.title": "光之法则·龙敖",
+  "STS2_CHAR_PORTALCRAFT-LU_WOH_LIGHT_PERSONIFIED.description": "对随机敌人造成1点伤害，共6次。所有敌人失去 {MagicNumber:diff()} 点[gold]力量[/gold]直到其回合结束。若此牌费用不为2，接下来3个敌方回合，意图攻击的敌人在该回合失去4点[gold]力量[/gold]。",
+
+  "STS2_CHAR_PORTALCRAFT-CHAOS_LEGION.title": "混沌军势",
+  "STS2_CHAR_PORTALCRAFT-CHAOS_LEGION.description": "对所有敌人造成 {Damage:diff()} 点伤害。"
 }

@@ -8,11 +8,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Imari's Little Buddies — 0 cost Token Attack, Exhaust.
-/// Deal 5 damage. Gain 5 Block.
-/// Upgrade: +2 damage, +2 block.
-/// </summary>
 public sealed class ImarisLittleBuddies : sts2_char_portalcraftCard
 {
     public override bool GainsBlock => true;

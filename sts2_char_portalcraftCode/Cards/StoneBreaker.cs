@@ -6,16 +6,10 @@ using MegaCrit.Sts2.Core.Commands;
 using MegaCrit.Sts2.Core.Entities.Cards;
 using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 using MegaCrit.Sts2.Core.Localization.DynamicVars;
-using MegaCrit.Sts2.Core.ValueProps;
 using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Stone Breaker — 1 cost Uncommon Skill.
-/// Do this 12 times: Deal 1 damage to a random enemy.
-/// Upgrade: 16 times instead.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class StoneBreaker : sts2_char_portalcraftCard
 {
@@ -35,7 +29,10 @@ public sealed class StoneBreaker : sts2_char_portalcraftCard
         for (int i = 0; i < hits; i++)
         {
             var target = Owner.RunState.Rng.Shuffle.NextItem(enemies);
-            await CreatureCmd.Damage(choiceContext, target, 1m, 0, Owner.Creature, this);
+            await DamageCmd.Attack(1m)
+                .FromCard(this)
+                .Targeting(target)
+                .Execute(choiceContext);
         }
     }
 

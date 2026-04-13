@@ -11,10 +11,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Ancient Cannon — 2 cost Power.
-/// On merge, deal 5 damage to a random enemy. Upgrade: 5→7.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class AncientCannon : sts2_char_portalcraftCard
 {

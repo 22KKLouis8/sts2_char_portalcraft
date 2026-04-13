@@ -13,11 +13,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Sincerity of the Dewdrop — 1 cost Uncommon Skill.
-/// Transform a card in your hand into Imari's Little Buddies.
-/// Upgrade: Transform up to 2 cards into upgraded Imari's Little Buddies.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class SincerityOfTheDewdrop : sts2_char_portalcraftCard
 {
@@ -32,8 +27,7 @@ public sealed class SincerityOfTheDewdrop : sts2_char_portalcraftCard
     {
         bool Filter(CardModel c) => c != this;
         int maxSelect = IsUpgraded ? 2 : 1;
-
-        // Guard: check for valid targets before opening selector to prevent soft lock
+        
         var validCards = PileType.Hand.GetPile(Owner).Cards.Where(Filter).ToList();
         if (validCards.Count == 0) return;
 

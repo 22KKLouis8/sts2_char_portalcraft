@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Ilsa, Brutal Drill Sergeant — 3 cost Uncommon Attack.
-/// Select a mode: 3x12 random damage OR 16 AoE damage.
-/// Upgrade: +4 base damage to both modes.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class IlsaBrutalDrillSergeant : sts2_char_portalcraftCard
 {

@@ -17,12 +17,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Wasteland of Destruction — 1 cost Skill, Exhaust, Common.
-/// Select a card in your hand and exhaust it. Draw 2 cards.
-/// Add an unplayable copy of this card to your hand. If that copy is exhausted, gain 1 energy.
-/// Upgrade: Draw 3 instead of 2.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class WastelandOfDestruction : sts2_char_portalcraftCard
 {
@@ -40,7 +34,6 @@ public sealed class WastelandOfDestruction : sts2_char_portalcraftCard
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
-        // Select a card to exhaust
         bool AnyCard(CardModel c) => c != this;
         var handCards = PileType.Hand.GetPile(Owner).Cards.Where(AnyCard).ToList();
         if (handCards.Count == 0) return;
@@ -60,18 +53,15 @@ public sealed class WastelandOfDestruction : sts2_char_portalcraftCard
             await CardCmd.Exhaust(choiceContext, card);
             didExhaust = true;
         }
-
-        // Draw cards only if a card was actually exhausted
+        
         if (didExhaust)
         {
             int drawCount = (int)DynamicVars["Cards"].BaseValue;
             await CardPileCmd.Draw(choiceContext, drawCount, Owner);
         }
-
-        // Add unplayable Wasteland token to hand
+        
         await WastelandOfDestructionToken.CreateInHand(Owner, CombatState);
-
-        // Ensure TalismanPower exists to handle the wasteland token exhaust
+        
         await TalismanHelper.EnsureTalismanPower(Owner, this);
     }
 

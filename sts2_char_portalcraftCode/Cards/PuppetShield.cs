@@ -40,7 +40,6 @@ public sealed class PuppetShield : sts2_char_portalcraftCard
 
         foreach (var puppet in selected)
         {
-            // Gain block equal to the puppet's damage
             decimal dmg = puppet.DynamicVars.Damage?.BaseValue ?? 0m;
             if (dmg > 0)
             {

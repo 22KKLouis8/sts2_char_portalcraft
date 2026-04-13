@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Eudie, Maiden Reborn — 2 cost Power.
-/// At end of turn: hand &lt; 5 → draw +1 next turn. Hand &gt; 6 → +1 energy next turn.
-/// Upgrade: add Innate.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class EudieMaidenReborn : sts2_char_portalcraftCard
 {

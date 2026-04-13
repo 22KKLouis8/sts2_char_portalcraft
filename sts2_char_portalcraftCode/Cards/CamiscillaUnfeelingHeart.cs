@@ -12,11 +12,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Camiscilla, Unfeeling Heart — 1 cost Attack.
-/// Deal 3 damage per Construct in your hand.
-/// Upgrade: +2 damage per construct.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class CamiscillaUnfeelingHeart : sts2_char_portalcraftCard
 {

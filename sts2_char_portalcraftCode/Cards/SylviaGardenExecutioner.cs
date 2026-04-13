@@ -10,10 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Character;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
-/// <summary>
-/// Sylvia, Garden Executioner — 1 cost Skill.
-/// Choose a Draw Cards or Heal card to add to your hand. Upgrade: cost -1.
-/// </summary>
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class SylviaGardenExecutioner : sts2_char_portalcraftCard
 {

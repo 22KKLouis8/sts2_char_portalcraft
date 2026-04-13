@@ -45,5 +45,17 @@
 
   "STS2_CHAR_PORTALCRAFT-NOAH_DAMAGE_BONUS_POWER.title": "Thread of Death",
   "STS2_CHAR_PORTALCRAFT-NOAH_DAMAGE_BONUS_POWER.description": "Your Puppets deal additional damage.",
-  "STS2_CHAR_PORTALCRAFT-NOAH_DAMAGE_BONUS_POWER.smartDescription": "Your Puppets deal +{Amount} additional damage."
+  "STS2_CHAR_PORTALCRAFT-NOAH_DAMAGE_BONUS_POWER.smartDescription": "Your Puppets deal +{Amount} additional damage.",
+
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.title": "Crest: Slaus, Revolving Wheel of Fortune",
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.description": "At start of turn, activate a random unused ability: reduce all hand costs by 1, gain Strength and Dexterity, or heal. Each ability activates only once. Expires when all three have been used.",
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.smartDescription": "At start of turn, activate a random unused ability: reduce all hand costs by 1, gain 2 Strength and 2 Dexterity, or heal 3 HP. Each ability activates only once. Expires when all three have been used.",
+
+  "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN_POWER.title": "Flowering Artisan",
+  "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN_POWER.description": "This turn, whenever you play a Skill, deal damage to ALL enemies.",
+  "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN_POWER.smartDescription": "This turn, whenever you play a Skill, deal {Amount} damage to ALL enemies.",
+
+  "STS2_CHAR_PORTALCRAFT-LU_WOH_INTENT_DEBUFF_POWER.title": "Crest: Lu Woh, Light Personified",
+  "STS2_CHAR_PORTALCRAFT-LU_WOH_INTENT_DEBUFF_POWER.description": "For the next 3 enemy turns, enemies that intend to attack lose 4 Strength for that turn.",
+  "STS2_CHAR_PORTALCRAFT-LU_WOH_INTENT_DEBUFF_POWER.smartDescription": "For the next {Amount} enemy turn(s), enemies that intend to attack lose 4 [gold]Strength[/gold] for that turn."
 }
