@@ -6,9 +6,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Puppets;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Puppet Theater power: At the start of each turn, add a Puppet to your hand.
-/// </summary>
 public sealed class PuppetTheaterPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

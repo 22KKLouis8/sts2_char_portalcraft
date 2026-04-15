@@ -7,10 +7,6 @@ using MegaCrit.Sts2.Core.Models;
 using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
-
-/// <summary>
-/// Ralmia, Sonic Racer power: For every 4 fusions, gain 1 energy.
-/// </summary>
 public sealed class RalmiaSonicRacerPower : sts2_char_portalcraftPower, IMergeListener
 {
     public override PowerType Type => PowerType.Buff;

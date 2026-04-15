@@ -20,6 +20,7 @@ public sealed class ElectricWhipLass : sts2_char_portalcraftCard
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
         new BlockVar(12m, ValueProp.Move),
+        new IntVar("MagicNumber", 1m),
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]
@@ -33,12 +34,17 @@ public sealed class ElectricWhipLass : sts2_char_portalcraftCard
     {
         await CreatureCmd.GainBlock(Owner.Creature, DynamicVars.Block, cardPlay);
 
-        var gear = CombatState.CreateCard<GearOfRemembrance>(Owner);
-        await CardPileCmd.AddGeneratedCardToCombat(gear, PileType.Hand, addedByPlayer: true);
+        int gearCount = (int)DynamicVars["MagicNumber"].BaseValue;
+        for (int i = 0; i < gearCount; i++)
+        {
+            var gear = CombatState.CreateCard<GearOfRemembrance>(Owner);
+            await CardPileCmd.AddGeneratedCardToCombat(gear, PileType.Hand, addedByPlayer: true);
+        }
     }
 
     protected override void OnUpgrade()
     {
         DynamicVars.Block.UpgradeValueBy(4m);
+        DynamicVars["MagicNumber"].UpgradeValueBy(1m);
     }
 }

@@ -15,9 +15,24 @@ namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class ShoRebornNightKing : sts2_char_portalcraftCard
 {
+    protected override bool ShouldGlowGoldInternal
+    {
+        get
+        {
+            if (CombatState == null) return false;
+            int skillsPlayed = CombatManager.Instance.History.CardPlaysFinished
+                .Count(e => e.CardPlay.Card.Type == CardType.Skill
+                         && e.CardPlay.Card.Owner == Owner
+                         && e.CardPlay.Card != this
+                         && e.HappenedThisTurn(CombatState));
+            return skillsPlayed >= (int)DynamicVars["SkillThreshold"].BaseValue;
+        }
+    }
+
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
         new IntVar("MagicNumber", 3m),
+        new IntVar("SkillThreshold", 2m),
     };
 
     public ShoRebornNightKing() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self) { }
@@ -30,7 +45,7 @@ public sealed class ShoRebornNightKing : sts2_char_portalcraftCard
                      && e.CardPlay.Card != this
                      && e.HappenedThisTurn(CombatState));
 
-        if (skillsPlayed >= 4)
+        if (skillsPlayed >= (int)DynamicVars["SkillThreshold"].BaseValue)
         {
             await PlayerCmd.GainEnergy(DynamicVars["MagicNumber"].BaseValue, Owner);
         }

@@ -7,12 +7,6 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Imari, Dewdrop power: This turn, whenever you play a Skill, add Imari's Little Buddies to hand.
-/// Amount = number of tokens to generate per skill played.
-/// Upgraded flag tracks whether to generate upgraded versions.
-/// Expires at end of turn.
-/// </summary>
 public sealed class ImariDewdropPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

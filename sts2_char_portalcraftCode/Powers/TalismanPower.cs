@@ -15,13 +15,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Omen;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Hidden power that manages all Talisman (Psalm) mechanics:
-/// - End of turn: White Psalm heals 2 + gives 2 Block, Black Psalm deals 2 AoE, then both transform
-/// - On exhaust: Immediately trigger effect + add opposite Psalm to hand
-/// - Wasteland tokens: gain 1 energy when exhausted
-/// - Beelzebub adds +2 to all Psalm outputs per stack
-/// </summary>
 public sealed class TalismanPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;
@@ -30,14 +23,7 @@ public sealed class TalismanPower : sts2_char_portalcraftPower
     private const int BaseBlockAmount = 2;
     private const int BaseDamageAmount = 2;
     private const int WastelandTokenDrawCount = 1;
-
-    /// <summary>
-    /// Flag to distinguish end-of-turn psalm transforms from genuine exhausts.
-    /// When true, AfterCardExhausted skips its effect+create logic since
-    /// BeforeTurnEnd already handles the effect and opposite psalm creation.
-    /// This ensures CardCmd.Exhaust can be used for proper multiplayer sync
-    /// without double-triggering psalm effects.
-    /// </summary>
+    
     private bool _isTransforming;
 
     public override async Task BeforeTurnEnd(PlayerChoiceContext choiceContext, CombatSide side)

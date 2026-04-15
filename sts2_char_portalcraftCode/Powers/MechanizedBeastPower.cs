@@ -9,9 +9,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Mechanized Beast power: When attacked this turn, deal damage back. Expires at start of next turn.
-/// </summary>
 public sealed class MechanizedBeastPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

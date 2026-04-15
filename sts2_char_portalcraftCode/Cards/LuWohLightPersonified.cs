@@ -16,6 +16,15 @@ namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class LuWohLightPersonified : sts2_char_portalcraftCard
 {
+    protected override bool ShouldGlowGoldInternal
+    {
+        get
+        {
+            if (CombatState == null) return false;
+            return EnergyCost.GetResolved() != 2;
+        }
+    }
+
     private int BaseStrLoss => IsUpgraded ? 3 : 2;
     private int BoostedStrLoss => IsUpgraded ? 5 : 4;
     private int HitCount => IsUpgraded ? 7 : 6;

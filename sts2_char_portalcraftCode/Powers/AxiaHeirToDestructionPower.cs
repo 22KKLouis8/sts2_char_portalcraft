@@ -9,11 +9,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Omen;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Axia power: At end of turn, exhaust all Psalm cards (White/Black) in your hand.
-/// Stacks cause additional cascade rounds — each round exhausts newly created psalms.
-/// Stack 1 = 1 round, Stack 2 = 2 rounds, etc.
-/// </summary>
 public sealed class AxiaHeirToDestructionPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

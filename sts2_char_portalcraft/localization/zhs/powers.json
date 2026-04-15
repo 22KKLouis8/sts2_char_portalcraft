@@ -1,5 +1,5 @@
 {
-  "STS2_CHAR_PORTALCRAFT-EUDIE_MAIDEN_REBORN_POWER.title": "崭新的少女",
+  "STS2_CHAR_PORTALCRAFT-EUDIE_MAIDEN_REBORN_POWER.title": "纹章：崭新的少女",
   "STS2_CHAR_PORTALCRAFT-EUDIE_MAIDEN_REBORN_POWER.description": "回合结束时，若手牌少于5张，下回合多抽1张牌。若手牌多于6张，下回合获得1点能量。",
   "STS2_CHAR_PORTALCRAFT-EUDIE_MAIDEN_REBORN_POWER.smartDescription": "回合结束时，若手牌少于5张，下回合多抽 {Amount} 张牌。若手牌多于6张，下回合获得 {Amount} 点能量。",
 
@@ -48,8 +48,8 @@
   "STS2_CHAR_PORTALCRAFT-NOAH_DAMAGE_BONUS_POWER.smartDescription": "你的悬丝傀儡造成额外 +{Amount} 点伤害。",
 
   "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.title": "纹章：转动的《命运之轮》·斯洛士",
-  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.description": "回合开始时，随机发动一个未使用的效果：减少手牌费用、获得力量与敏捷、或恢复生命。每个效果只能发动一次。三个效果全部发动后移除此能力。",
-  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.smartDescription": "回合开始时，随机发动一个未使用的效果：手牌费用减少1、获得2点力量和2点敏捷、或恢复3点生命。每个效果只能发动一次。三个效果全部发动后移除此能力。",
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.description": "回合开始时，随机发动一个效果：减少手牌费用、获得力量与敏捷、或恢复生命。不会连续两回合发动相同效果。",
+  "STS2_CHAR_PORTALCRAFT-SLAUS_REVOLVING_WHEEL_POWER.smartDescription": "回合开始时，随机发动一个效果：手牌费用减少1、获得2点力量和2点敏捷、或恢复3点生命。不会连续两回合发动相同效果。",
 
   "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN_POWER.title": "繁花技师",
   "STS2_CHAR_PORTALCRAFT-FLOWERING_ARTISAN_POWER.description": "本回合每使用1张技能牌，对所有敌人造成伤害。",

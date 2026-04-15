@@ -10,9 +10,6 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
-/// <summary>
-/// T2 Ominous Artifact β — Heal 4. Gain 14 Block. Gain 4 Plating.
-/// </summary>
 public sealed class OminousArtifactBeta : ArtifactCard
 {
     public override ArtifactTier Tier => ArtifactTier.T2_Steel;
@@ -20,9 +17,9 @@ public sealed class OminousArtifactBeta : ArtifactCard
 
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new HealVar(4m),
+        new HealVar(6m),
         new BlockVar(14m, ValueProp.Move),
-        new PowerVar<PlatingPower>(4m),
+        new PowerVar<PlatingPower>(6m),
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]

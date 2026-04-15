@@ -8,10 +8,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Relics;
 
-/// <summary>
-/// Resonance Core — Starter relic.
-/// At the start of combat, add a Gear of Ambition and a Gear of Remembrance to your hand.
-/// </summary>
 public sealed class ResonanceCore : sts2_char_portalcraftRelic
 {
     public override RelicRarity Rarity => RelicRarity.Starter;

@@ -13,6 +13,15 @@ namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class MechaCavalier : sts2_char_portalcraftCard
 {
+    protected override bool ShouldGlowGoldInternal
+    {
+        get
+        {
+            if (CombatState == null) return false;
+            return EnergyCost.GetResolved() != 2;
+        }
+    }
+
     public override bool GainsBlock => true;
 
     private int BaseBlock => IsUpgraded ? 16 : 12;

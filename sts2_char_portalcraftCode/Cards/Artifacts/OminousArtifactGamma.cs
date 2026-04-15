@@ -10,9 +10,6 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
-/// <summary>
-/// T2 Ominous Artifact γ — Draw 4 cards. Gain 4 Energy. Next turn, draw 2 additional cards.
-/// </summary>
 public sealed class OminousArtifactGamma : ArtifactCard
 {
     public override ArtifactTier Tier => ArtifactTier.T2_Steel;

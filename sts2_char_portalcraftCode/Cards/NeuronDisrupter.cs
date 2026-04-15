@@ -20,7 +20,7 @@ public sealed class NeuronDisrupter : sts2_char_portalcraftCard
 
     public override IEnumerable<CardKeyword> CanonicalKeywords => new[] { CardKeyword.Exhaust };
 
-    public NeuronDisrupter() : base(5, CardType.Skill, CardRarity.Rare, TargetType.Self) { }
+    public NeuronDisrupter() : base(1, CardType.Skill, CardRarity.Rare, TargetType.Self) { }
 
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {

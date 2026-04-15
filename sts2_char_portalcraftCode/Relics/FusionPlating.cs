@@ -9,9 +9,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Relics;
 
-/// <summary>
-/// Fusion Plating — Whenever you Fuse an Artifact, gain 2 Block.
-/// </summary>
 public sealed class FusionPlating : sts2_char_portalcraftRelic, IMergeListener
 {
     public override RelicRarity Rarity => RelicRarity.Common;

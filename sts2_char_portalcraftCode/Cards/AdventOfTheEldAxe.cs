@@ -14,6 +14,15 @@ namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class AdventOfTheEldAxe : sts2_char_portalcraftCard
 {
+    protected override bool ShouldGlowGoldInternal
+    {
+        get
+        {
+            if (CombatState == null) return false;
+            return PileType.Hand.GetPile(Owner).Cards.Any(c => c != this && c.EnergyCost.Canonical >= 2);
+        }
+    }
+
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
         new DamageVar(9m, ValueProp.Move),

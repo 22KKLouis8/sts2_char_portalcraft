@@ -9,7 +9,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
-/// <summary>T1 Artifact — Deal 14 damage.</summary>
 public sealed class StrikerArtifact : ArtifactCard
 {
     public override ArtifactTier Tier => ArtifactTier.T1_Iron;

@@ -16,7 +16,7 @@ public sealed class PuppetTheater : sts2_char_portalcraftCard
 {
     protected override IEnumerable<DynamicVar> CanonicalVars => new DynamicVar[]
     {
-        new IntVar("MagicNumber", 1m),
+        new IntVar("MagicNumber", 2m),
     };
 
     protected override IEnumerable<IHoverTip> ExtraHoverTips => new IHoverTip[]

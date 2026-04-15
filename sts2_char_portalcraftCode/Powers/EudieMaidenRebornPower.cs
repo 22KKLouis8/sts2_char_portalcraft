@@ -8,11 +8,6 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Eudie, Maiden Reborn power:
-/// At end of turn, if hand &lt; 5, draw +1 card next turn.
-/// At end of turn, if hand &gt; 6, gain +1 Energy next turn.
-/// </summary>
 public sealed class EudieMaidenRebornPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

@@ -12,10 +12,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
-/// <summary>
-/// T2 Ominous Artifact α — Deal 14 (+1 per card in exhaust pile) damage to target enemy.
-/// Deal 14 damage to ALL other enemies.
-/// </summary>
 public sealed class OminousArtifactAlpha : ArtifactCard
 {
     public override ArtifactTier Tier => ArtifactTier.T2_Steel;

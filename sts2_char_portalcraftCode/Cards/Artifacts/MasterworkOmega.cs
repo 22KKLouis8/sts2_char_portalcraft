@@ -13,13 +13,6 @@ using MegaCrit.Sts2.Core.Models.Powers;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
-/// <summary>
-/// T3 — Masterwork Omega. Cost 3. Retain + Exhaust.
-/// Deal 14 (+1 per card in exhaust pile) damage to target enemy.
-/// Deal 14 damage to ALL other enemies.
-/// Heal 4. Gain 14 Block. Gain 6 Plating.
-/// Draw 4 cards. Gain 4 Energy. At start of next turn, draw 2 cards.
-/// </summary>
 public sealed class MasterworkOmega : ArtifactCard
 {
     public override ArtifactTier Tier => ArtifactTier.T3_Omega;

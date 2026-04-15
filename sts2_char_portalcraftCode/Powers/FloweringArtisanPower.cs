@@ -10,11 +10,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Flowering Artisan power: This turn, whenever you play a Skill, deal Amount damage to ALL enemies.
-/// Excludes the FloweringArtisan card itself (already played before this power is applied).
-/// Expires at end of turn.
-/// </summary>
 public sealed class FloweringArtisanPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

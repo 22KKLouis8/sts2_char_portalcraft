@@ -16,7 +16,16 @@ namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class UnfeelingEldAxe : sts2_char_portalcraftCard
 {
-    public UnfeelingEldAxe() : base(3, CardType.Skill, CardRarity.Rare, TargetType.Self) { }
+    protected override bool ShouldGlowGoldInternal
+    {
+        get
+        {
+            if (CombatState == null) return false;
+            return EnergyCost.GetResolved() < EnergyCost.Canonical;
+        }
+    }
+
+    public UnfeelingEldAxe() : base(2, CardType.Skill, CardRarity.Rare, TargetType.Self) { }
 
     public override Task AfterCardEnteredCombat(CardModel card)
     {
@@ -62,6 +71,6 @@ public sealed class UnfeelingEldAxe : sts2_char_portalcraftCard
 
     protected override void OnUpgrade()
     {
-        EnergyCost.UpgradeBy(-1);
+        AddKeyword(CardKeyword.Retain);
     }
 }

@@ -9,10 +9,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
-
-/// <summary>
-/// Ancient Cannon power: On merge, deal {Amount} damage to a random enemy.
-/// </summary>
 public sealed class AncientCannonPower : sts2_char_portalcraftPower, IMergeListener
 {
     public override PowerType Type => PowerType.Buff;

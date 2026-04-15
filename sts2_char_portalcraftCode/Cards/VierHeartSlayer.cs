@@ -37,7 +37,7 @@ public sealed class VierHeartSlayer : sts2_char_portalcraftCard
 
         var prefs = new CardSelectorPrefs(
             new LocString("card_selection", "VIER_HEART_SLAYER_PROMPT"),
-            minCount: 1,
+            minCount: 0,
             maxCount: 1
         );
 

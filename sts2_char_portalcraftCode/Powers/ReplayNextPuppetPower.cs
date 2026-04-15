@@ -7,10 +7,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Puppets;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Temporary power: the next Puppet card played gets replayed (via BaseReplayCount).
-/// Removes itself after triggering.
-/// </summary>
 public sealed class ReplayNextPuppetPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

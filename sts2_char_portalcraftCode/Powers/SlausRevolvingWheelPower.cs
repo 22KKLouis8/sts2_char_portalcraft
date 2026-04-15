@@ -13,58 +13,58 @@ namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
 /// <summary>
 /// Slaus, Revolving Wheel of Fortune power.
-/// At start of turn, randomly activate one of the remaining effects:
-/// 1. Reduce all hand card costs by 1 this turn
-/// 2. Gain 2 Strength and 2 Dexterity
-/// 3. Heal 3 HP
-/// Each effect can only activate once. The power is removed when all three have been used.
+/// At start of turn, randomly activate one of the effects that wasn't used last turn:
+/// 1. Reduce all hand card costs by 1 this turn (scales with stacks)
+/// 2. Gain 2 Strength and 2 Dexterity (scales with stacks)
+/// 3. Heal 3 HP (scales with stacks)
+/// The same effect cannot activate two turns in a row.
 /// </summary>
 public sealed class SlausRevolvingWheelPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;
     public override PowerStackType StackType => PowerStackType.Counter;
 
-    // Track which effects are still available (indices 0, 1, 2)
-    private readonly List<int> _remainingEffects = new() { 0, 1, 2 };
+    // Track which effect was last used to avoid repeating it
+    private int _lastEffect = -1;
 
     public override async Task AfterPlayerTurnStart(PlayerChoiceContext choiceContext, Player player)
     {
         if (player.Creature != Owner) return;
-        if (_remainingEffects.Count == 0) return;
 
         Flash();
 
-        int index = player.RunState.Rng.Shuffle.NextInt(_remainingEffects.Count);
-        int effect = _remainingEffects[index];
-        _remainingEffects.RemoveAt(index);
+        // Build list of available effects (all except the last one used)
+        var available = new List<int> { 0, 1, 2 };
+        if (_lastEffect >= 0)
+        {
+            available.Remove(_lastEffect);
+        }
+
+        int index = player.RunState.Rng.Shuffle.NextInt(available.Count);
+        int effect = available[index];
+        _lastEffect = effect;
 
         switch (effect)
         {
             case 0:
-                // Reduce all hand card costs by 1 this turn
+                // Reduce all hand card costs by (1 * stacks) this turn
                 var handCards = PileType.Hand.GetPile(player).Cards.ToList();
                 foreach (var card in handCards)
                 {
-                    card.EnergyCost.AddThisTurn(-1);
+                    card.EnergyCost.AddThisTurn(-Amount);
                 }
                 break;
 
             case 1:
-                // Gain 2 Strength and 2 Dexterity
-                await PowerCmd.Apply<StrengthPower>(Owner, 2m, Owner, null);
-                await PowerCmd.Apply<DexterityPower>(Owner, 2m, Owner, null);
+                // Gain (2 * stacks) Strength and (2 * stacks) Dexterity
+                await PowerCmd.Apply<StrengthPower>(Owner, 2m * Amount, Owner, null);
+                await PowerCmd.Apply<DexterityPower>(Owner, 2m * Amount, Owner, null);
                 break;
 
             case 2:
-                // Heal 3 HP
-                await CreatureCmd.Heal(Owner, 3m);
+                // Heal (3 * stacks) HP
+                await CreatureCmd.Heal(Owner, 3m * Amount);
                 break;
-        }
-
-        // Remove the power when all effects have been used
-        if (_remainingEffects.Count == 0)
-        {
-            await PowerCmd.Remove(this);
         }
     }
 }

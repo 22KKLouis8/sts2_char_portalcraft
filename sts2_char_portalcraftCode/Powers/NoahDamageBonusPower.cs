@@ -8,11 +8,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Puppets;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Noah power: All Puppets you play deal additional damage.
-/// Amount = bonus damage per puppet attack.
-/// Stacks additively (playing Noah twice doubles the bonus).
-/// </summary>
 public sealed class NoahDamageBonusPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

@@ -7,12 +7,6 @@ using MegaCrit.Sts2.Core.GameActions.Multiplayer;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Player buff applied by Lu Woh when cost is not 2.
-/// For the next 3 enemy turns, any enemy that intends to attack
-/// receives -4 Strength for that turn.
-/// Amount = turns remaining.
-/// </summary>
 public sealed class LuWohIntentDebuffPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;

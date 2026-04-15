@@ -8,7 +8,6 @@ using MegaCrit.Sts2.Core.ValueProps;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Artifacts;
 
-/// <summary>T1 Artifact — Gain 14 Block.</summary>
 public sealed class FortifierArtifact : ArtifactCard
 {
     public override ArtifactTier Tier => ArtifactTier.T1_Iron;

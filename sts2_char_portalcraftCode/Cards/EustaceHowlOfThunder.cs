@@ -15,6 +15,15 @@ namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards;
 [Pool(typeof(sts2_char_portalcraftCardPool))]
 public sealed class EustaceHowlOfThunder : sts2_char_portalcraftCard
 {
+    protected override bool ShouldGlowGoldInternal
+    {
+        get
+        {
+            if (CombatState == null) return false;
+            return EnergyCost.GetResolved() != 2;
+        }
+    }
+
     private int BaseDamage => IsUpgraded ? 18 : 14;
     private int BoostedDamage => IsUpgraded ? 22 : 18;
 

@@ -8,10 +8,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Puppets;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Powers;
 
-/// <summary>
-/// Liam power: Whenever you play a Puppet, gain Amount block.
-/// Every 5 Puppets played, gain 1 energy.
-/// </summary>
 public sealed class LiamCrazedCreatorPower : sts2_char_portalcraftPower
 {
     public override PowerType Type => PowerType.Buff;
