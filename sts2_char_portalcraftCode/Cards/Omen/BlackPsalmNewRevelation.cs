@@ -15,10 +15,7 @@ public sealed class BlackPsalmNewRevelation : sts2_char_portalcraftCard
 {
     private const int BaseDamageAmount = 2;
     private const int UpgradeDamageAmount = 1;
-
-    /// <summary>
-    /// The damage value this psalm deals per turn, accounting for upgrade state.
-    /// </summary>
+    
     public int DamageValue => BaseDamageAmount + (CurrentUpgradeLevel > 0 ? UpgradeDamageAmount : 0);
 
     protected override HashSet<CardTag> CanonicalTags => new() { OmenTag.Talisman };

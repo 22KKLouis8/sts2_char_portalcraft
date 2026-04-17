@@ -6,10 +6,6 @@ using sts2_char_portalcraft.sts2_char_portalcraftCode.Audio;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Patches;
 
-/// <summary>
-/// Plays custom audio when a card is played from hand.
-/// Skips Talisman types (they play audio on add-to-hand instead).
-/// </summary>
 [HarmonyPatch(typeof(CardModel), nameof(CardModel.OnPlayWrapper))]
 public static class CardPlayAudioPatch
 {
@@ -20,10 +16,6 @@ public static class CardPlayAudioPatch
         CardPlayAudioManager.PlayForCard(typeName);
     }
 }
-
-/// <summary>
-/// Plays custom audio for Talisman tokens when they are added to the player's hand.
-/// </summary>
 [HarmonyPatch(typeof(CardPileCmd), nameof(CardPileCmd.AddGeneratedCardToCombat))]
 public static class TalismanAddToHandAudioPatch
 {

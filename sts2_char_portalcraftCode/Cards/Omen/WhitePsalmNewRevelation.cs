@@ -15,10 +15,7 @@ public sealed class WhitePsalmNewRevelation : sts2_char_portalcraftCard
 {
     private const int BaseBlockAmount = 2;
     private const int UpgradeBlockAmount = 1;
-
-    /// <summary>
-    /// The block value this psalm provides per turn, accounting for upgrade state.
-    /// </summary>
+    
     public int BlockValue => BaseBlockAmount + (CurrentUpgradeLevel > 0 ? UpgradeBlockAmount : 0);
 
     protected override HashSet<CardTag> CanonicalTags => new() { OmenTag.Talisman };

@@ -9,10 +9,6 @@ using MegaCrit.Sts2.Core.Models;
 
 namespace sts2_char_portalcraft.sts2_char_portalcraftCode.Cards.Omen;
 
-/// <summary>
-/// Unplayable copy of Wasteland of Destruction.
-/// When exhausted (by another card's effect), gain 1 energy.
-/// </summary>
 public sealed class WastelandOfDestructionToken : sts2_char_portalcraftCard
 {
     protected override HashSet<CardTag> CanonicalTags => new() { OmenTag.Talisman, OmenTag.WastelandToken };
