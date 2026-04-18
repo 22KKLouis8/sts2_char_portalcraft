@@ -27,7 +27,7 @@
   "CRYSTALLIZE.title": "结晶",
   "CRYSTALLIZE.description": "若无法支付此牌的完整费用，则以[gold]结晶[/gold]费用打出，并将此牌变为[gold]护符[/gold]。此时仅结晶效果会触发。",
   "STS2_CHAR_PORTALCRAFT-CRYSTALLIZE.title": "结晶",
-  "STS2_CHAR_PORTALCRAFT-CRYSTALLIZE.description": "若无法支付此牌的完整费用，则以[gold]结晶[/gold]费用打出。此时仅结晶效果会触发。",
+  "STS2_CHAR_PORTALCRAFT-CRYSTALLIZE.description": "若无法支付此牌的完整费用，则以[gold]结晶[/gold]费用打出，并将此牌变为[gold]护符[/gold]。此时仅结晶效果会触发。",
 
   "COUNTDOWN.title": "倒数",
   "COUNTDOWN.description": "你的回合开始时减1。归零时，此牌被[gold]消耗[/gold]。",

@@ -40,6 +40,18 @@ public sealed class RetrafiaDivineMother : sts2_char_portalcraftCard, ICrystalli
 
     public RetrafiaDivineMother() : base(5, CardType.Skill, CardRarity.Ancient, TargetType.AllEnemies) { }
 
+    protected override bool ShouldGlowGoldInternal
+    {
+        get
+        {
+            if (CombatState == null) return false;
+            var pcs = Owner?.PlayerCombatState;
+            if (pcs == null) return false;
+            int fullCost = Math.Max(0, EnergyCost.GetWithModifiers(CostModifiers.All));
+            return pcs.Energy < fullCost && pcs.Energy >= CrystallizeCost;
+        }
+    }
+
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         if (await CrystallizeRuntime.TryExecute(this, choiceContext)) return;
