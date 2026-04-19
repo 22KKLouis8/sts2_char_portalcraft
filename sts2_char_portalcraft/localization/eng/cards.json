@@ -207,10 +207,10 @@
   "STS2_CHAR_PORTALCRAFT-AUGMENTATION_BESTOWAL.description": "Until the end of this turn, whenever an [gold]Artifact[/gold] card is played, gain 1 Energy and draw 1 card.",
 
   "STS2_CHAR_PORTALCRAFT-RETRAFIA_DIVINE_MOTHER.title": "Retrafia, Divine Mother",
-  "STS2_CHAR_PORTALCRAFT-RETRAFIA_DIVINE_MOTHER.description": "[gold]Crystallize[/gold] (1): [gold]Countdown[/gold] (10). During your turn, all [gold]Artifacts[/gold] cost 0 to play. Whenever an allied [gold]Artifact[/gold] is played, subtract 1 from this amulet's [gold]Countdown[/gold].\n[gold]Last Words[/gold]: Add a [gold]Retrafia, Divine Mother[/gold] to your hand. It costs 0 to play this turn.\n----------\nDeal {IfUpgraded:show:4|3}X damage to ALL enemies. X equals the number of [gold]Artifact[/gold] cards exhausted this match.",
+  "STS2_CHAR_PORTALCRAFT-RETRAFIA_DIVINE_MOTHER.description": "[gold]Crystallize[/gold] (1): [gold]Countdown[/gold] (10). During your turn, all [gold]Artifacts[/gold] cost 0 to play. Whenever an [gold]Artifact[/gold] is played, subtract 1 from this amulet's [gold]Countdown[/gold].\n[gold]Last Words[/gold]: Add a [gold]Retrafia, Divine Mother[/gold] to your hand. It costs 0 to play this turn.\n----------\nDeal {IfUpgraded:show:4|3}X damage to ALL enemies. X equals the number of [gold]Artifact[/gold] cards exhausted this match.",
 
   "STS2_CHAR_PORTALCRAFT-RETRAFIA_DIVINE_MOTHER_AMULET.title": "Retrafia, Divine Mother",
-  "STS2_CHAR_PORTALCRAFT-RETRAFIA_DIVINE_MOTHER_AMULET.description": "[gold]Countdown[/gold] ({Countdown}). During your turn, all [gold]Artifacts[/gold] cost 0 to play. Whenever an allied [gold]Artifact[/gold] is played, subtract 1 from [gold]Countdown[/gold].\n[gold]Last Words[/gold]: Add a [gold]Retrafia, Divine Mother[/gold] to your hand. It costs 0 to play this turn.",
+  "STS2_CHAR_PORTALCRAFT-RETRAFIA_DIVINE_MOTHER_AMULET.description": "[gold]Countdown[/gold] ({Countdown}). During your turn, all [gold]Artifacts[/gold] cost 0 to play. Whenever an [gold]Artifact[/gold] is played, subtract 1 from [gold]Countdown[/gold].\n[gold]Last Words[/gold]: Add a [gold]Retrafia, Divine Mother[/gold] to your hand. It costs 0 to play this turn.",
 
   "STS2_CHAR_PORTALCRAFT-LIGHT_OF_THE_DEWDROP.title": "Light of the Dewdrop",
   "STS2_CHAR_PORTALCRAFT-LIGHT_OF_THE_DEWDROP.description": "Draw {Cards:diff()} cards.",
