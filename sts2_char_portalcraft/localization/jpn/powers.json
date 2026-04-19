@@ -1,4 +1,16 @@
 {
+  "STS2_CHAR_PORTALCRAFT-KEYWORD_DISPATCHER_POWER.title": "キーワードディスパッチャ",
+  "STS2_CHAR_PORTALCRAFT-KEYWORD_DISPATCHER_POWER.description": "内部用",
+  "STS2_CHAR_PORTALCRAFT-KEYWORD_DISPATCHER_POWER.smartDescription": "内部用",
+
+  "STS2_CHAR_PORTALCRAFT-AUGMENTATION_BESTOWAL_POWER.title": "機構の解放",
+  "STS2_CHAR_PORTALCRAFT-AUGMENTATION_BESTOWAL_POWER.description": "ターン終了時まで[gold]アーティファクト[/gold]をプレイするたび、エナジー1を得、カード1枚を引く。",
+  "STS2_CHAR_PORTALCRAFT-AUGMENTATION_BESTOWAL_POWER.smartDescription": "ターン終了時まで[gold]アーティファクト[/gold]をプレイするたび、エナジー1を得、カード1枚を引く。",
+
+  "STS2_CHAR_PORTALCRAFT-RETRAFIA_AMULET_POWER.title": "聖母なる光",
+  "STS2_CHAR_PORTALCRAFT-RETRAFIA_AMULET_POWER.description": "すべての[gold]アーティファクト[/gold] のコストを0にする。",
+  "STS2_CHAR_PORTALCRAFT-RETRAFIA_AMULET_POWER.smartDescription": "すべての[gold]アーティファクト[/gold] のコストを0にする。",
+
   "STS2_CHAR_PORTALCRAFT-EUDIE_MAIDEN_REBORN_POWER.title": "紋章：新たなる少女",
   "STS2_CHAR_PORTALCRAFT-EUDIE_MAIDEN_REBORN_POWER.description": "ターン終了時、手札が5枚未満の場合、次のターンにカードを1枚引く。手札が6枚を超える場合、次のターンにエナジー1を得る。",
   "STS2_CHAR_PORTALCRAFT-EUDIE_MAIDEN_REBORN_POWER.smartDescription": "ターン終了時、手札が5枚未満の場合、次のターンにカードを {Amount} 枚引く。手札が6枚を超える場合、次のターンにエナジー {Amount} を得る。",
@@ -11,17 +23,9 @@
   "STS2_CHAR_PORTALCRAFT-REPLAY_NEXT_PUPPET_POWER.description": "次にプレイするパペットは再びプレイされる。",
   "STS2_CHAR_PORTALCRAFT-REPLAY_NEXT_PUPPET_POWER.smartDescription": "次にプレイするパペットはさらに {Amount} 回プレイされる。",
 
-  "STS2_CHAR_PORTALCRAFT-PUPPET_THEATER_POWER.title": "ドールズシアター",
-  "STS2_CHAR_PORTALCRAFT-PUPPET_THEATER_POWER.description": "ターン開始時、パペットを手札に加える。",
-  "STS2_CHAR_PORTALCRAFT-PUPPET_THEATER_POWER.smartDescription": "ターン開始時、パペットを {Amount} 枚手札に加える。",
-
   "STS2_CHAR_PORTALCRAFT-LIAM_CRAZED_CREATOR_POWER.title": "狂気の創造者",
   "STS2_CHAR_PORTALCRAFT-LIAM_CRAZED_CREATOR_POWER.description": "パペットをプレイするたび、ブロックを得る。パペットを4枚プレイするたび、エナジー1を得る。",
   "STS2_CHAR_PORTALCRAFT-LIAM_CRAZED_CREATOR_POWER.smartDescription": "パペットをプレイするたび、 {Amount} ブロックを得る。パペットを4枚プレイするたび、エナジー1を得る。",
-
-  "STS2_CHAR_PORTALCRAFT-TALISMAN_POWER.title": "御守り",
-  "STS2_CHAR_PORTALCRAFT-TALISMAN_POWER.description": "御守りはプレイすることはできない。",
-  "STS2_CHAR_PORTALCRAFT-TALISMAN_POWER.smartDescription": "御守りはプレイすることはできない。",
 
   "STS2_CHAR_PORTALCRAFT-AXIA_HEIR_TO_DESTRUCTION_POWER.title": "破壊の継承者",
   "STS2_CHAR_PORTALCRAFT-AXIA_HEIR_TO_DESTRUCTION_POWER.description": "ターン終了時、手札にあるすべての[gold]新約・白の章[/gold]と[gold]新約・黒の章[/gold]を廃棄する。",
